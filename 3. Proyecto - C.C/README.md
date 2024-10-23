@@ -2,7 +2,7 @@
 El programa debe constar de un carrito de compras, donde el usuario pueda visualizar y comprar productos.
 
 ## Desarrollo propio
-Mi sitio web consta de ventas de productos relacionados al futbol, ya sean remeras/camisetas de clubes o las herramientas para llevar a cabo el deporte.
+Mi sitio web consta de ventas de productos relacionados al futbol, ya sean remeras/camisetas de clubes o los insumos para llevar a cabo el deporte.
 
 ## Funcionalidades
 
