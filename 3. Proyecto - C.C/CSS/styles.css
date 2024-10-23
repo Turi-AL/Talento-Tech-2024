@@ -1,0 +1,110 @@
+/* Estilo general de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('../Imagenes/LOGOS/LogoPr.jpeg') no-repeat center center fixed;
+  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  color: #333;
+}
+
+/* Fondo con opacidad para el contenido */
+.content {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+}
+/* Barra de navegación centrada */
+nav {
+  background-color: #333;
+  padding: 15px;
+  text-align: center; /* Centra el contenido */
+}
+
+nav p {
+  display: inline-block; /* Hace que el conjunto de enlaces se comporte como bloque en línea */
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px; /* Espaciado interno para que los enlaces se vean más grandes */
+  margin: 0 10px;
+  font-size: 18px; /* Ajuste del tamaño de texto */
+  display: inline-block;
+  transition: background-color 0.3s ease; /* Animación para el hover */
+}
+
+nav a:hover {
+  background-color: #555; /* Cambia de color cuando se pasa el mouse por encima */
+  border-radius: 5px; /* Bordes redondeados en hover */
+}
+
+nav a i {
+  margin-right: 8px; /* Espaciado entre el icono y el texto */
+  font-size: 16px; /* Ajuste del tamaño del icono */
+}
+
+/* Responsive - Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  nav a {
+      padding: 10px;
+      font-size: 16px;
+  }
+}
+
+/* Equipos de fútbol */
+.equipos, .marcas {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.equipos h2, .marcas h2 {
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+ul li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+  .content {
+      padding: 10px;
+  }
+}
