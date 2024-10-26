@@ -36,7 +36,7 @@ header h1 {
 
 /* Barra de navegación centrada */
 nav {
-  background-color: #fffb00b9;
+  background-color: #ffffff;
   padding: 15px;
   text-align: center;
   display: flex;
@@ -57,7 +57,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #fff;
+  background-color: #f7e707d1;
   border-radius: 5px;
 }
 
@@ -180,7 +180,7 @@ footer {
 }
 
 footer p {
-  font-size: 15px;
+  font-size: 20px;
   color: #ccc;
 }
 
@@ -232,7 +232,7 @@ footer p {
 }
 
 .suscripcion-form button:hover {
-  background-color: #ff0707;
+  background-color: #83ff07;
 }
 
 /* Responsividad para la sección de suscripción */
@@ -312,4 +312,32 @@ h3, p {
   border-left: 2px solid #ccc;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+}
+/* Estilo para los enlaces con estado :focus */
+nav a:focus {
+  outline: 2px dashed #4CAF50; /* Un borde verde para el enfoque */
+}
+
+/* Agregar una sombra a los botones */
+.suscripcion-form button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Background más oscuro para mejorar la legibilidad */
+.content {
+  background-color: rgba(255, 255, 255, 0.85); /* Ajustado a un 0.85 */
+}
+footer .social-media {
+  margin-top: 10px;
+}
+
+footer .social-media a {
+  color: white; /* Color de los íconos */
+  margin: 0 10px; /* Espaciado entre íconos */
+  font-size: 20px; /* Tamaño del ícono */
+  transition: color 0.3s ease; /* Transición para el efecto hover */
+}
+
+footer .social-media a:hover {
+  color: #fbff00; /* Color en hover */
 }
