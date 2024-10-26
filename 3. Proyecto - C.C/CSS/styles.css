@@ -3,14 +3,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url('../Imagenes/LOGOS/LogoPr.jpeg') no-repeat center center fixed;
-  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  background: url('../Imagenes/LOGOS/FONDO.png') no-repeat center center fixed;
+  background-size: cover;
   color: #333;
 }
 
 /* Fondo con opacidad para el contenido */
 .content {
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   margin: 0 auto;
 }
@@ -19,92 +19,263 @@ body {
 header {
   background-color: #222;
   color: white;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
+  position: relative; /* Asegura que el z-index funcione */
   z-index: 10;
 }
+
+header h1 {
+  font-size: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espacio entre logo y texto */
+}
+
 /* Barra de navegación centrada */
 nav {
-  background-color: #333;
+  background-color: #fffb00b9;
   padding: 15px;
-  text-align: center; /* Centra el contenido */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 nav p {
-  display: inline-block; /* Hace que el conjunto de enlaces se comporte como bloque en línea */
   margin: 0;
 }
 
 nav a {
-  color: white;
+  color: #000;
   text-decoration: none;
-  padding: 10px 20px; /* Espaciado interno para que los enlaces se vean más grandes */
+  padding: 10px 20px;
   margin: 0 10px;
-  font-size: 18px; /* Ajuste del tamaño de texto */
-  display: inline-block;
-  transition: background-color 0.3s ease; /* Animación para el hover */
+  font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #555; /* Cambia de color cuando se pasa el mouse por encima */
-  border-radius: 5px; /* Bordes redondeados en hover */
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-nav a i {
-  margin-right: 8px; /* Espaciado entre el icono y el texto */
-  font-size: 16px; /* Ajuste del tamaño del icono */
+/* Estilo general para los enlaces */
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-/* Responsive - Ajuste para pantallas pequeñas */
+a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+/* Responsividad */
 @media screen and (max-width: 768px) {
   nav a {
-      padding: 10px;
-      font-size: 16px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .content {
+    padding: 10px;
   }
 }
 
-/* Equipos de fútbol */
+@media (max-width: 480px) {
+  .container-flex {
+    flex-direction: column;
+  }
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Secciones de Equipos de fútbol y Marcas */
 .equipos, .marcas {
   margin-top: 20px;
   padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .equipos h2, .marcas h2 {
-  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
   color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #4CAF50;
 }
 
+.equipos h2::before, .marcas h2::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #4CAF50;
+  margin: 0 auto 5px;
+}
+
+.equipos p, .marcas p {
+  font-size: 16px;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Listas de equipos y marcas */
 ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 ul li {
+  width: 120px;
   background-color: #fff;
   border: 1px solid #ddd;
-  margin-bottom: 10px;
-  padding: 10px;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+ul li:hover {
+  transform: scale(1.05);
 }
 
 ul li img {
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+ul li p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
 }
 
 /* Footer */
 footer {
   background-color: #222;
   color: white;
-  padding: 50px;
+  padding: 0px;
   text-align: center;
 }
 
-/* Responsividad */
+footer p {
+  font-size: 15px;
+  color: #ccc;
+}
+
+/* Sección de suscripción */
+.suscripcion {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.suscripcion h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.suscripcion-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.suscripcion-form label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.suscripcion-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.suscripcion-form button {
+  background-color: #fefe0c;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suscripcion-form button:hover {
+  background-color: #ff0707;
+}
+
+/* Responsividad para la sección de suscripción */
 @media screen and (max-width: 768px) {
-  .content {
-      padding: 10px;
+  .suscripcion {
+    padding: 20px;
   }
+  .suscripcion-form {
+    width: 100%;
+  }
+}
+
+/* Estilo para el ícono del carrito de compras */
+.cart-icon {
+  position: absolute;
+  top: 10px; /* Ajusta según el diseño */
+  right: 20px; /* Cambiado a la derecha para una mejor visualización */
+  font-size: 24px;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
+.cart-icon:hover {
+  background-color: #555;
+}
+/* Títulos de secciones */
+h2 {
+  font-size: 24px; /* Tamaño de la fuente más grande */
+  color: #004aad; /* Color azul oscuro para destacar */
+  font-weight: bold;
+  text-transform: uppercase; /* Convierte el texto en mayúsculas */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Agrega un pequeño sombreado */
+  margin-bottom: 10px;
+}
+
+/* Subtítulos o descripciones debajo de cada título */
+h3, p {
+  font-size: 20px;
+  color: #000000;
+  font-style: italic; /* Estilo en cursiva */
+  margin-bottom: 15px;
 }
