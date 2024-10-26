@@ -279,3 +279,37 @@ h3, p {
   font-style: italic; /* Estilo en cursiva */
   margin-bottom: 15px;
 }
+/* Estilo para la barra lateral */
+.sidebar-carousel {
+  position: fixed;
+  right: 0;
+  top: 100px;
+  width: 150px;
+  height: calc(100% - 200px);
+  background-color: #f8f8f8;
+  border-left: 2px solid #ccc;
+  padding: 10px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sidebar-carousel img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+/* Estilo para el título de la barra lateral */
+.sidebar-title {
+  position: fixed;
+  right: 0;
+  top: 1px; /* Ajusta según la ubicación deseada */
+  width: 150px;
+  text-align: center;
+  background-color: #0008ff;
+  color: #fbff00;
+  font-weight: bold;
+  padding: 10px;
+  border-left: 2px solid #ccc;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
