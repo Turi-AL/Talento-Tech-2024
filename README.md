@@ -20,30 +20,21 @@ Aquí puedes ver un adelanto del diseño de TuriGol:
 
 
 Estructura del Proyecto
+
 Este repositorio contiene los siguientes archivos clave:
 
 index.html: Estructura principal del sitio web.
 styles.css: Estilos para el diseño visual del sitio web.
-scripts.js: (Opcional) Archivo para la lógica y la interactividad, si planeas agregar funciones en JavaScript.
 Desglose de Secciones en HTML
 Header: Contiene el logo de la tienda, navegación principal y carrito de compras.
 Barra Lateral de Productos: Sección dinámica que muestra productos de forma continua.
 Formulario de Contacto y Suscripción: Formas sencillas de mantener el contacto y enviar consultas.
 Footer: Información adicional y enlaces a redes sociales.
-Tecnologías Utilizadas
+
+Lenguajes utilizados
 HTML5: Para la estructura de contenido.
 CSS3: Para el diseño y los estilos visuales.
-JavaScript (Opcional): Para agregar interactividad en futuras mejoras.
-Instrucciones de Instalación y Uso
-Clona el Repositorio:
-bash
-Copiar código
-git clone https://github.com/tuusuario/TuriGol.git
-Abre el archivo index.html en tu navegador.
-Explora el sitio para ver las distintas secciones y funcionalidades.
-Contribuciones
-¡Las contribuciones son bienvenidas! Si tienes alguna idea de mejora o deseas corregir un error, siéntete libre de crear un issue o hacer un pull request.
 
-Autor
+Autor: Agustin Luján
 Este proyecto fue creado por Tu Nombre o Usuario de GitHub como parte de un curso de desarrollo web.
 
