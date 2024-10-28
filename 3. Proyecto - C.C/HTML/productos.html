@@ -5,87 +5,175 @@
         <meta name="viewport" content="width=device-width, initial-scale=1,0">
         <title>Document</title>
 
-        <link rel="stylesheet" href="CSS/styles.css"><!-- Estilos conexion al archivo css -->
+        <link rel="stylesheet" href="../CSS/styles.css"><!-- Estilos conexion al archivo css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Enlace a Font Awesome -->
+        <link rel="icon" href="Imagenes/LOGOS/LogoM.png" type="image/png">
+
     </head>
     <body>
         <header>
-            <img src="../Imagenes/LOGOS/LogoM.png" alt="TuriGol Logo" style="width: 40px; height: auto;"> TuriGol
+            <h1><img src="../Imagenes/LOGOS/LogoM.png" alt="TuriGol Logo" style="width: 40px; height: auto;"> TuriGol</h1>
             <h4>Sabemos del buen futbol.</h4>
         </header>
-        <nav>
+
+        <nav> <!-- Barra de navegación con iconos -->
             <p>
-                <a href="../index.html">Inicio</a>
-                <a href="./productos.html">Productos</a>
-                <a href="./ofertas.html">Ofertas</a>
-                <a href="./giftcard.html">Giftcard</a>
-                <a href="./informacion.html">Informacion</a>
-                <a href="./contactos.html">Contactos</a>
+                <a href="#" class="cart-icon"> <i class="fas fa-shopping-cart"></i></a>
+                <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+                <a href="../HTML/productos.html"><i class="fas fa-futbol"></i> Productos</a>
+                <a href="../HTML/ofertas.html"><i class="fas fa-tags"></i> Ofertas</a>
+                <a href="../HTML/giftcard.html"><i class="fas fa-gift"></i> Giftcard</a>
+                <a href="../HTML/contactos.html"><i class="fas fa-address-book"></i> Contactos</a>
+                <a href="../HTML/informacion.html"><i class="fas fa-info-circle"></i> Información</a>
             </p>
         </nav>
-      <main>
-        <h2>Productos</h2>
-        <section>
-            <h3>Camisetas</h3>
-        </section>
 
-        <section>
-            <h3>Shorts</h3>
-        </section>
+        <main>
+         <div class="content">
+            <section class="productos">
+                <h2>Camisetas</h2>
+                <div class="product-cards">
+                    <div class="card">Camiseta Titular - Boca Juniors
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/CAMISETAS/BOCA 3.jpg" alt="Camiseta" style="width: 50px; height: auto;">
+                    <div class="card">Camiseta Suplente - Boca Juniors
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/CAMISETAS/BOCA 2.png" alt="Camiseta" style="width: 50px; height: auto;">
+                    <div class="card">Camiseta Alternativa - Boca Juniors
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/CAMISETAS/BOCA.png" alt="Camiseta" style="width: 50px; height: auto;">
+                </div>
+    
+                <h2>Shorts</h2>
+                <div class="product-cards">
+                    <div class="card">Short - Boca Juniors
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/SHORTS/BOCA 5.jpeg" alt="Short" style="width: 50px; height: auto;">
+                    <div class="card">Short - Manchester United
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/SHORTS/UNT 5.jpg" alt="Short" style="width: 50px; height: auto;">
 
-        <section>
-            <h3>Botines</h3>
-        </section>
+                </div>
+    
+                <h2>Buzos</h2>
+                <div class="product-cards">
+                    <div class="card">Buzo - Boca Juniors
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/BUZO/BOCA 4.jpg" alt="Buzo" style="width: 50px; height: auto;">
+                    <div class="card">Buzo - Manchester United
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/BUZO/UNT 4.jpg" alt="Buzo" style="width: 50px; height: auto;">
 
-        <section>
-            <h3>Conjuntos</h3>
-        </section>
+                </div>
+    
+                <h2>Medias</h2>
+                <div class="product-cards">
+                    <div class="card">Medias - Boca Juniors
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/MEDIAS/BOCA 6.jpg" alt="Medias" style="width: 50px; height: auto;">
+                    <div class="card">Medias - Manchester United
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/MEDIAS/UNT 6.jpg" alt="Medias" style="width: 50px; height: auto;">
 
-        <section>
-            <h3>Camperas</h3>
-        </section>
+                </div>
+    
+                <h2>Botines</h2>
+                <div class="product-cards">
+                    <div class="card"> Adidas X Crazyfast. 3 FG Unisex Blanco
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/BOTINES/ADIDAS 1.jpg" alt="Botines" style="width: 50px; height: auto;">
+                    <div class="card">Predator Club FXG Jr
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/BOTINES/ADIDAS 2.jpg" alt="Botines" style="width: 50px; height: auto;">
+                </div>
+    
+                <h2>Guantes de Arquero</h2>
+                <div class="product-cards">
+                    <div class="card">Adidas Predator Training Azul
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/GUANTES/GUANTES 1.jpg" alt="Guantes" style="width: 50px; height: auto;">
+                    <div class="card"> Puma Ultra Play RC Blanco 
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/GUANTES/GUANTES 2.jpg" alt="Guantes" style="width: 50px; height: auto;">
+                </div>
+    
+                <h2>Canilleras</h2>
+                <div class="product-cards">
+                    <div class="card"> Puma King Negra
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/CANILLERAS/CAN 1.jpg" alt="Canilleras" style="width: 50px; height: auto;">
+                    <div class="card">Nike Charge Negra
+                        $100.00
+                    </div>
+                    <img src="../Imagenes/PRODUCTOS/CANILLERAS/CAN 2.jpg" alt="Canilleras" style="width: 50px; height: auto;">
+                </div>
+            </section>
+        </div>
+        </main>
 
-        <section>
-            <h3>Pantalones</h3>
-        </section>
 
-        <section>
-            <h3>Medias</h3>
-        </section>
-      </main>
-
-      <section>
-        <h3>Canilleras</h3>
-      </section>
-
-      <section>
-        <h3>Guantes</h3>
-      </section>
-
-      <footer>
-        <br> 
-        <p style="text-align: center; margin-top: 20px; "> Aceptamos pagos con: </p> <br>
-         <table align="center">
-             <tr>
-                 <td>
-                     <img src="../Imagenes/MARCAS/VISA.png" alt="Visa" width="50" height="auto">
-                 </td>
-                 <td>
-                     <img src="../Imagenes/MARCAS/MASTERCARD.png" alt="Mastercard" width="50" height="auto">
-                 </td>
-                 <td>
-                     <img src="../Imagenes/MARCAS/AMERICAN.png" alt="American Express" width="50" height="auto">
-                 </td>
-                 <td>
-                     <img src="../Imagenes/MARCAS/MP.png" alt="Mercado Pago" width="50" height="auto">
-                 </td>
-             </tr>
-         </table>
-
-         <br>
-         <p style="text-align: center; margin-top: 20px;">
-             © 2024 TuriGol || Todos los derechos reservados </p> <br>
-     </footer>
+        <footer>
+            <br> 
+            <p style="text-align: center; margin-top: 20px; "> Aceptamos pagos con: </p> <br>
+             <table align="center">
+                 <tr>
+                     <td>
+                         <img src="../Imagenes/MARCAS/VISA.png" alt="Visa" width="50" height="auto">
+                     </td>
+                     <td>
+                         <img src="../Imagenes/MARCAS/MASTERCARD.png" alt="Mastercard" width="50" height="auto">
+                     </td>
+                     <td>
+                         <img src="../Imagenes/MARCAS/AMERICAN.png" alt="American Express" width="50" height="auto">
+                     </td>
+                     <td>
+                         <img src="../Imagenes/MARCAS/MP.png" alt="Mercado Pago" width="50" height="auto">
+                     </td>
+                 </tr>
+             </table>
+             
+             <!-- Formulario de suscripción -->
+     <section class="suscripcion">
+         <h2>¡Suscríbete para obtener descuentos exclusivos!</h2>
+         <form action="#" method="POST" class="suscripcion-form">
+         <label for="email">Correo Electrónico:</label>
+         <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+         <button type="submit">Suscribirme</button>
+         </form>
+     </section>
+ 
+             <br>
+             <p style="text-align: center; margin-top: 20px;">
+                 © 2024 TuriGol || Todos los derechos reservados </p> <br>
+                     <div class="social-media">
+                       <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                         <i class="fab fa-instagram"></i>
+                       </a>
+                       <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                         <i class="fab fa-facebook"></i>
+                       </a>
+                       <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                         <i class="fab fa-twitter"></i>
+                       </a>
+                       <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
+                         <i class="fab fa-whatsapp"></i>
+                       </a>
+                     </div>
+         </footer>
 
     </body>
 
