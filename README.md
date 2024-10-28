@@ -16,7 +16,7 @@ Footer Informativo: Con enlaces a redes sociales y detalles de contacto.
 Vista Previa
 
 Aquí puedes ver un adelanto del diseño de TuriGol:
-
+![readme](https://github.com/user-attachments/assets/8dee73ae-c240-437c-88a7-db922666b9eb)
 
 
 Estructura del Proyecto
