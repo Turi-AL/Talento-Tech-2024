@@ -12,6 +12,7 @@ Estructura del Proyecto
 Tecnologías Utilizadas
 
 ////////////////////////////////////////////////////////
+
 Características
 
 Interfaz Amigable: Un diseño visual simple y atractivo que facilita la navegación.
