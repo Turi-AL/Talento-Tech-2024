@@ -302,7 +302,7 @@ h3, p {
 .sidebar-title {
   position: fixed;
   right: 0;
-  top: 1px; /* Ajusta según la ubicación deseada */
+  top: 1px;
   width: 150px;
   text-align: center;
   background-color: #0008ff;
@@ -313,6 +313,24 @@ h3, p {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .sidebar-title {
+    width: 100px; /* Reducir el ancho */
+    font-size: 14px; /* Reducir el tamaño de fuente */
+    padding: 8px; /* Ajustar el padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-title {
+    width: 80px; 
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
 /* Estilo para los enlaces con estado :focus */
 nav a:focus {
   outline: 2px dashed #4CAF50; /* Un borde verde para el enfoque */
