@@ -1,6 +1,6 @@
 TuriGol - Tienda de Equipos de Fútbol 🏆⚽
 
-TuriGol es un sitio web de comercio electrónico diseñado para la venta de equipos de fútbol. Este proyecto es parte de un curso de desarrollo web y utiliza HTML, CSS y JavaScript (en un futuro) para brindar una experiencia atractiva y funcional.
+TuriGol es un sitio web de comercio electrónico diseñado para la venta de equipos de fútbol. Este proyecto es parte de un curso de desarrollo web y utiliza HTML, CSS y JavaScript para brindar una experiencia atractiva y funcional.
 
 ///////////////////////////////////////////////////////////
 
@@ -65,6 +65,8 @@ Lenguajes utilizados
 HTML5: Para la estructura de contenido.
 
 CSS: Para el diseño y los estilos visuales.
+
+JavaScript: Se usa para la funcionalidad del carrito de compras.
 
 ////////////////////////////////////////////////////////
 
