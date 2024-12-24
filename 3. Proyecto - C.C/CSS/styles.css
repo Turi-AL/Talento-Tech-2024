@@ -264,7 +264,7 @@ footer p {
 }
 /* Títulos de secciones */
 h2 {
-  font-size: 24px; /* Tamaño de la fuente más grande */
+  font-size: 20px; /* Tamaño de la fuente más grande */
   color: #004aad; /* Color azul oscuro para destacar */
   font-weight: bold;
   text-transform: uppercase; /* Convierte el texto en mayúsculas */
@@ -274,16 +274,17 @@ h2 {
 
 /* Subtítulos o descripciones debajo de cada título */
 h3, p {
-  font-size: 20px;
+  font-size: 15px;
   color: #000000;
   font-style: italic; /* Estilo en cursiva */
   margin-bottom: 15px;
 }
+
 /* Estilo para la barra lateral */
 .sidebar-carousel {
   position: fixed;
   right: 0;
-  top: 100px;
+  top: 140px; /* Asegúrate de que la barra lateral comience en esta posición */
   width: 150px;
   height: calc(100% - 200px);
   background-color: #f8f8f8;
@@ -302,7 +303,7 @@ h3, p {
 .sidebar-title {
   position: fixed;
   right: 0;
-  top: 1px;
+  top: 70px; /* Alinea el título con el borde superior de la barra lateral */
   width: 150px;
   text-align: center;
   background-color: #0008ff;
@@ -311,25 +312,26 @@ h3, p {
   padding: 10px;
   border-left: 2px solid #ccc;
   border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 0; /* Elimina el radio inferior para alinear mejor */
 }
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {
   .sidebar-title {
     width: 100px; /* Reducir el ancho */
-    font-size: 14px; /* Reducir el tamaño de fuente */
+    font-size: 10px; /* Reducir el tamaño de fuente */
     padding: 8px; /* Ajustar el padding */
   }
 }
 
+/* Ocultar la barra lateral y el título en celulares */
 @media (max-width: 480px) {
+  .sidebar-carousel,
   .sidebar-title {
-    width: 80px; 
-    font-size: 12px;
-    padding: 6px;
+    display: none;
   }
 }
+
 
 /* Estilo para los enlaces con estado :focus */
 nav a:focus {
@@ -424,7 +426,7 @@ header nav a {
 }
 
 .card {
-  width: 150px;
+  width: 160px; /* Ajustamos un poco más el ancho */
   padding: 15px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -436,6 +438,58 @@ header nav a {
 
 .card:hover {
   transform: scale(1.05);
+}
+
+.card img {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 120px; /* Forzamos una altura fija */
+  object-fit: cover; /* Recorta la imagen para que llene el espacio */
+  border-radius: 4px; /* Añade bordes redondeados a las imágenes */
+  margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
+}
+
+.card p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card button {
+  background-color: #28a745; /* Verde para el botón */
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #218838; /* Un tono más oscuro al pasar el cursor */
+}
+
+
+
+.btn-comprar {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-comprar:hover {
+  background-color: #45a049;
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+.btn-comprar:active {
+  transform: scale(0.95); /* Reduce el tamaño al hacer clic */
 }
 
 footer {
@@ -516,4 +570,279 @@ footer {
   background-color: #0056b3;
 }
 
+/* Estilo para la sección de contactos */
+.contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
 
+/* Títulos principales */
+.contactos h2 {
+  color: #0f5000;
+  margin-bottom: 20px;
+
+.contactos h3 {
+    color: #0048ff;
+    margin-bottom: 20px;
+  }}
+
+/* Lista de información */
+.contactos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contactos li {
+  margin: 20px 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contactos li strong {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Enlaces */
+.contactos a {
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.contactos a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.giftcards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+/* Estilo para las giftcards */
+.giftcards {
+  background-color: #ffffff; /* Fondo azul */
+  color: #ffffff; /* Texto blanco */
+  font-size: 56px; /* Tamaño más grande */
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 30px; /* Separación con los elementos de abajo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltarlo */
+  max-width: 250px; /* Ancho máximo para centrarlo */
+  margin: 0 auto 30px auto; /* Centrado horizontal */
+  font-family: Arial, sans-serif; /* Fuente clara */
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.giftcard {
+  background-color: #ffffff;
+  border: 2px solid #004aad;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.giftcard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.giftcard h4 {
+  color: #004aad;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.giftcard p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.giftcard button {
+  background-color: #004aad;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.giftcard button:hover {
+  background-color: #007bff;
+}
+/* CSS para la clase stock */
+.stock {
+  background-color: #ffdddd; /* Color de fondo suave */
+  border: 1px solid #ff6b6b; /* Borde rojo claro */
+  color: #d8000c; /* Color del texto */
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stock h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.stock p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+.categorias-productos {
+  display: flex; /* Cambiar a flexbox */
+  flex-wrap: wrap; /* Permitir múltiples líneas */
+  gap: 15px; /* Espaciado entre elementos */
+  justify-content: center; /* Centrar productos */
+  margin-top: 10px;
+}
+
+
+.categorias-titulo {
+  cursor: pointer;
+  background-color: #0008ff;
+  color: #fbff00;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.item-details h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.item-details p {
+  margin: 0;
+  color: #777;
+}
+
+.quantity-input {
+  width: 50px;
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #ff1a1a;
+}
+
+.total-container {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.checkout-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #218838;
+}
+.carrito {
+  position: fixed;
+  top: 20%;
+  right: 10px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 250px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.carrito-item {
+  margin-bottom: 10px;
+}
+
+.btn-eliminar {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+#carrito-container {
+  margin: 20px auto;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+#carrito table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#carrito th, #carrito td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#carrito th {
+  background-color: #333;
+  color: white;
+}
+
+.cantidad-producto {
+  width: 50px;
+  text-align: center;
+}
+
+.btn-eliminar {
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

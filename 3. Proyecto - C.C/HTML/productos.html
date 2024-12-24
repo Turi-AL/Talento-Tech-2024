@@ -1,180 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1,0">
-        <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../JavaScript/Funciones.js" defer></script>
+    <link rel="icon" href="Imagenes/LOGOS/LogoM.png" type="image/png">
 
-        <link rel="stylesheet" href="../CSS/styles.css"><!-- Estilos conexion al archivo css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Enlace a Font Awesome -->
-        <link rel="icon" href="Imagenes/LOGOS/LogoM.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1><img src="../Imagenes/LOGOS/LogoM.png" alt="TuriGol Logo" style="width: 40px; height: auto;"> TuriGol</h1>
+        <h4>Sabemos del buen fútbol.</h4>
+    </header>
 
-    </head>
-    <body>
-        <header>
-            <h1><img src="../Imagenes/LOGOS/LogoM.png" alt="TuriGol Logo" style="width: 40px; height: auto;"> TuriGol</h1>
-            <h4>Sabemos del buen futbol.</h4>
-        </header>
+    <nav>
+        <p>
+            <a href="#carrito-container" class="cart-icon"> <i class="fas fa-shopping-cart"></i></a>
+            <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+            <a href="../HTML/productos.html"><i class="fas fa-futbol"></i> Productos</a>
+            <a href="../HTML/contactos.html"><i class="fas fa-address-book"></i> Contactos</a>
+            <a href="../HTML/informacion.html"><i class="fas fa-info-circle"></i> Información</a>
+        </p>
+    </nav>
 
-        <nav> <!-- Barra de navegación con iconos -->
-            <p>
-                <a href="#" class="cart-icon"> <i class="fas fa-shopping-cart"></i></a>
-                <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
-                <a href="../HTML/productos.html"><i class="fas fa-futbol"></i> Productos</a>
-                <a href="../HTML/ofertas.html"><i class="fas fa-tags"></i> Ofertas</a>
-                <a href="../HTML/giftcard.html"><i class="fas fa-gift"></i> Giftcard</a>
-                <a href="../HTML/contactos.html"><i class="fas fa-address-book"></i> Contactos</a>
-                <a href="../HTML/informacion.html"><i class="fas fa-info-circle"></i> Información</a>
-            </p>
-        </nav>
+    <main>
+        <div class="content">
+            <div class="categorias-titulo">Camisetas</div>
+            <div class="categorias-productos">
+                <div class="card" data-nombre="Camiseta Titular" data-precio="100" data-descripcion="Camiseta oficial titular del Boca Juniors, temporada 2024. Diseño clásico con tecnología climacool.">
+                    <img src="../Imagenes/PRODUCTOS/CAMISETAS/BOCA 3.jpg" alt="Camiseta Titular" class="producto-imagen">
+                    <div>Camiseta Titular - Boca Juniors - $100.00</div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
 
-        <main>
-         <div class="content">
-            <section class="productos">
-                <h2>Camisetas</h2>
-                <div class="product-cards">
-                    <div class="card">Camiseta Titular - Boca Juniors
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/CAMISETAS/BOCA 3.jpg" alt="Camiseta" style="width: 50px; height: auto;">
-                    <div class="card">Camiseta Suplente - Boca Juniors
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/CAMISETAS/BOCA 2.png" alt="Camiseta" style="width: 50px; height: auto;">
-                    <div class="card">Camiseta Alternativa - Boca Juniors
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/CAMISETAS/BOCA.png" alt="Camiseta" style="width: 50px; height: auto;">
+                <div class="card" data-nombre="Camiseta Suplente" data-precio="100" data-descripcion="Camiseta suplente del Boca Juniors, temporada 2024. Perfecta para los aficionados al club.">
+                    <img src="../Imagenes/PRODUCTOS/CAMISETAS/BOCA 2.png" alt="Camiseta Suplente" class="producto-imagen">
+                    <div>Camiseta Suplente - Boca Juniors - $100.00</div>
+                    <button class="btn-comprar">Agregar al carrito</button>
                 </div>
-    
-                <h2>Shorts</h2>
-                <div class="product-cards">
-                    <div class="card">Short - Boca Juniors
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/SHORTS/BOCA 5.jpeg" alt="Short" style="width: 50px; height: auto;">
-                    <div class="card">Short - Manchester United
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/SHORTS/UNT 5.jpg" alt="Short" style="width: 50px; height: auto;">
+            </div>
 
+            <div class="categorias">
+                <div class="categorias-titulo">Shorts</div>
+                <div class="categorias-productos">
+                    <div class="card" data-nombre="Short" data-precio="100" data-descripcion="Short oficial del Boca Juniors. Ideal para entrenar o jugar con estilo.">
+                        <img src="../Imagenes/PRODUCTOS/SHORTS/BOCA 5.jpeg" alt="Short Boca Juniors" class="producto-imagen">
+                        <div>Short - Boca Juniors - $100.00</div>
+                        <button class="btn-comprar">Agregar al carrito</button>
+                    </div>
                 </div>
-    
-                <h2>Buzos</h2>
-                <div class="product-cards">
-                    <div class="card">Buzo - Boca Juniors
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/BUZO/BOCA 4.jpg" alt="Buzo" style="width: 50px; height: auto;">
-                    <div class="card">Buzo - Manchester United
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/BUZO/UNT 4.jpg" alt="Buzo" style="width: 50px; height: auto;">
+            </div>
 
+            <div class="categorias">
+                <div class="categorias-titulo">Buzos</div>
+                <div class="categorias-productos">
+                    <div class="card" data-nombre="Buzo" data-precio="100" data-descripcion="Buzo con capucha oficial del Boca Juniors, perfecto para los días fríos.">
+                        <img src="../Imagenes/PRODUCTOS/BUZO/BOCA 4.jpg" alt="Buzo Boca Juniors" class="producto-imagen">
+                        <div>Buzo - Boca Juniors - $100.00</div>
+                        <button class="btn-comprar">Agregar al carrito</button>
+                    </div>
                 </div>
-    
-                <h2>Medias</h2>
-                <div class="product-cards">
-                    <div class="card">Medias - Boca Juniors
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/MEDIAS/BOCA 6.jpg" alt="Medias" style="width: 50px; height: auto;">
-                    <div class="card">Medias - Manchester United
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/MEDIAS/UNT 6.jpg" alt="Medias" style="width: 50px; height: auto;">
+            </div>
 
+            <div class="categorias">
+                <div class="categorias-titulo">Medias</div>
+                <div class="categorias-productos">
+                    <div class="card" data-nombre="Medias" data-precio="100" data-descripcion="Medias oficiales del Boca Juniors con ajuste perfecto para máxima comodidad.">
+                        <img src="../Imagenes/PRODUCTOS/MEDIAS/BOCA 6.jpg" alt="Medias Boca Juniors" class="producto-imagen">
+                        <div>Medias - Boca Juniors - $100.00</div>
+                        <button class="btn-comprar">Agregar al carrito</button>
+                    </div>
                 </div>
-    
-                <h2>Botines</h2>
-                <div class="product-cards">
-                    <div class="card"> Adidas X Crazyfast. 3 FG Unisex Blanco
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/BOTINES/ADIDAS 1.jpg" alt="Botines" style="width: 50px; height: auto;">
-                    <div class="card">Predator Club FXG Jr
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/BOTINES/ADIDAS 2.jpg" alt="Botines" style="width: 50px; height: auto;">
+            </div>
+
+            <div id="carrito-container">
+                <h2>Carrito de Compras</h2>
+                <table id="carrito">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario</th>
+                            <th>Total</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- aca va el carrito -->
+                    </tbody>
+                </table>
+                <div id="total-carrito">
+                    <strong>Total del Carrito:</strong> $<span id="carrito-total">0.00</span>
                 </div>
-    
-                <h2>Guantes de Arquero</h2>
-                <div class="product-cards">
-                    <div class="card">Adidas Predator Training Azul
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/GUANTES/GUANTES 1.jpg" alt="Guantes" style="width: 50px; height: auto;">
-                    <div class="card"> Puma Ultra Play RC Blanco 
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/GUANTES/GUANTES 2.jpg" alt="Guantes" style="width: 50px; height: auto;">
-                </div>
-    
-                <h2>Canilleras</h2>
-                <div class="product-cards">
-                    <div class="card"> Puma King Negra
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/CANILLERAS/CAN 1.jpg" alt="Canilleras" style="width: 50px; height: auto;">
-                    <div class="card">Nike Charge Negra
-                        $100.00
-                    </div>
-                    <img src="../Imagenes/PRODUCTOS/CANILLERAS/CAN 2.jpg" alt="Canilleras" style="width: 50px; height: auto;">
-                </div>
-            </section>
+            </div>
+            <p>¡Gracias por comprar! 😊 Pronto la opcion sera real. </p>
         </div>
-        </main>
 
+    </main>
 
-        <footer>
-            <br> 
-            <p style="text-align: center; margin-top: 20px; "> Aceptamos pagos con: </p> <br>
-             <table align="center">
-                 <tr>
-                     <td>
-                         <img src="../Imagenes/MARCAS/VISA.png" alt="Visa" width="50" height="auto">
-                     </td>
-                     <td>
-                         <img src="../Imagenes/MARCAS/MASTERCARD.png" alt="Mastercard" width="50" height="auto">
-                     </td>
-                     <td>
-                         <img src="../Imagenes/MARCAS/AMERICAN.png" alt="American Express" width="50" height="auto">
-                     </td>
-                     <td>
-                         <img src="../Imagenes/MARCAS/MP.png" alt="Mercado Pago" width="50" height="auto">
-                     </td>
-                 </tr>
-             </table>
-             
-             <!-- Formulario de suscripción -->
-     <section class="suscripcion">
-         <h2>¡Suscríbete para obtener descuentos exclusivos!</h2>
-         <form action="#" method="POST" class="suscripcion-form">
-         <label for="email">Correo Electrónico:</label>
-         <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
-         <button type="submit">Suscribirme</button>
-         </form>
-     </section>
- 
-             <br>
-             <p style="text-align: center; margin-top: 20px;">
-                 © 2024 TuriGol || Todos los derechos reservados </p> <br>
-                     <div class="social-media">
-                       <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                         <i class="fab fa-instagram"></i>
-                       </a>
-                       <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                         <i class="fab fa-facebook"></i>
-                       </a>
-                       <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-                         <i class="fab fa-twitter"></i>
-                       </a>
-                       <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
-                         <i class="fab fa-whatsapp"></i>
-                       </a>
-                     </div>
-         </footer>
+    <footer>
+        <br>
+        <p style="text-align: center; margin-top: 20px;">Aceptamos pagos con:</p>
+        <br>
+        <table align="center">
+            <tr>
+                <td>
+                    <img src="../Imagenes/MARCAS/VISA.png" alt="Visa" width="50" height="auto">
+                </td>
+                <td>
+                    <img src="../Imagenes/MARCAS/MASTERCARD.png" alt="Mastercard" width="50" height="auto">
+                </td>
+                <td>
+                    <img src="../Imagenes/MARCAS/AMERICAN.png" alt="American Express" width="50" height="auto">
+                </td>
+                <td>
+                    <img src="../Imagenes/MARCAS/MP.png" alt="Mercado Pago" width="50" height="auto">
+                </td>
+            </tr>
+        </table>
 
-    </body>
+        <section class="suscripcion">
+            <h2>¡Suscríbete para obtener descuentos exclusivos!</h2>
+            <form action="#" method="POST" class="suscripcion-form">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </section>
 
+        <br>
+        <p style="text-align: center; margin-top: 20px;">© 2024 TuriGol || Todos los derechos reservados</p>
+        <br>
+        <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+</body>
 </html>

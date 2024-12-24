@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1,0">
         <title>Document</title>
 
-        <link rel="stylesheet" href="CSS/styles.css"><!-- Estilos conexion al archivo css -->
+        <link rel="stylesheet" href="../CSS/styles.css"><!-- Estilos conexion al archivo css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Enlace a Font Awesome -->
     </head>
     <body>
@@ -14,34 +14,64 @@
             <h4>Sabemos del buen futbol.</h4>
         </header>
 
-        <nav>
+        <nav> <!-- Barra de navegación con iconos -->
             <p>
-                <a href="../index.html">Inicio</a>
-                <a href="./productos.html">Productos</a>
-                <a href="./ofertas.html">Ofertas</a>
-                <a href="./giftcard.html">Giftcard</a>
-                <a href="./informacion.html">Informacion</a>
-                <a href="./contactos.html">Contactos</a>
+                <a href="../HTML/productos.html#carrito-container" class="cart-icon"> <i class="fas fa-shopping-cart"></i></a>
+                <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+                <a href="../HTML/productos.html"><i class="fas fa-futbol"></i> Productos</a>
+                <a href="../HTML/contactos.html"><i class="fas fa-address-book"></i> Contactos</a>
+                <a href="../HTML/informacion.html"><i class="fas fa-info-circle"></i> Información</a>
             </p>
         </nav>
-        
-            <h1>Informacion</h1>
             <header>
+                <h2>Informacion</h2>
                 <h2>Preguntas Frecuentes</h2>
             </header>
+        
     
             <main>
-                <section>
-                    <h3>¿Que es TuriGol?</h3>
-                    <p>TuriGol es un sitio web que ofrece productos relacionados al futbol, ya sean remeras/camisetas de clubes o las herramientas para llevar a cabo el deporte.</p>
-                <section>
-                    <h3>¿Donde estamos ubicados?</h3>
-                    <p>Estamos ubicados en Buenos Aires, Argentina.</p>
-                </section>
-                <section>
-                    <h3>¿Tienen algun tipo de contacto para ofrecer?</h3>
-                    <p>Si, podes escribirnos a nuestro correo electronico: turigol@gmail.com o pulsar en "<a href="./contactos.html">contactos</a>" para conocer los difertentes metodos decontacto.<!--referir al archivo contacto.html para ver el codigo-->
-                </section>
+                <div class="content">
+                    <section>
+                        <h3>¿Qué es TuriGol?</h3>
+                        <p>TuriGol es un sitio web que ofrece productos relacionados al fútbol, ya sean remeras/camisetas de clubes o las herramientas para llevar a cabo el deporte.</p>
+                    </section>
+                    <section>
+                        <h3>¿Dónde estamos ubicados?</h3>
+                        <p>Estamos ubicados en Buenos Aires, Argentina.</p>
+                    </section>
+                    <section>
+                        <h3>¿Tienen algún tipo de contacto para ofrecer?</h3>
+                        <p>Sí, podés escribirnos a nuestro correo electrónico: <a href="mailto:turigol@gmail.com">turigol@gmail.com</a> o pulsar en "<a href="./contactos.html">contactos</a>" para conocer los diferentes métodos de contacto.</p>
+                    </section>
+                    <section>
+                        <h3>¿Cuáles son los planes de envío?</h3>
+                        <p>Ofrecemos los siguientes planes de envío:</p>
+                        <ul>
+                            <li1><strong>Envío estándar:</strong> Entrega en 5-7 días hábiles.</li1>
+                            <li2><strong>Envío rápido:</strong> Entrega en 2-3 días hábiles.</li2>
+                            <li3><strong>Envío internacional:</strong> Disponible para países seleccionados, con un tiempo de entrega de 10-15 días hábiles.</li3>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>¿Qué equipos tienen disponibles?</h3>
+                        <p>Contamos con una amplia variedad de productos de los siguientes equipos:</p>
+                        <ul>
+                            <li>Boca Juniors</li>
+                            <li>River Plate</li>
+                            <li>Palmeiras</li>
+                            <li>Real Madrid</li>
+                            <li>Barcelona</li>
+                            <li>Manchester United</li>
+                            <li>PSG</li>
+                            <li>Bayern Múnich</li>
+                        </ul>
+                        <p>Pero lamentamos informarte que solo hay stock de Boca Juniors</p>
+                    </section>
+                    <section>
+                        <h3>Aviso importante</h3>
+                        <p>La página se encuentra actualmente en desarrollo. Estamos trabajando para ofrecer la mejor experiencia posible y ampliar nuestro catálogo de productos y servicios. ¡Gracias por tu paciencia!</p>
+                    </section>
+                </div>
             </main>
             <footer>
                 <br> 
@@ -66,6 +96,20 @@
                  <br>
                  <p style="text-align: center; margin-top: 20px;">
                      © 2024 TuriGol || Todos los derechos reservados </p> <br>
+                         <div class="social-media">
+                           <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                             <i class="fab fa-instagram"></i>
+                           </a>
+                           <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                             <i class="fab fa-facebook"></i>
+                           </a>
+                           <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                             <i class="fab fa-twitter"></i>
+                           </a>
+                           <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
+                             <i class="fab fa-whatsapp"></i>
+                           </a>
+                         </div>
              </footer>
     </body>
 </html>
